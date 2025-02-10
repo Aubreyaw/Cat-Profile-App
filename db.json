@@ -1,0 +1,57 @@
+{
+    "pets": [
+      {
+        "id": 1,
+        "name": "Buddy",
+        "species": "Dog",
+        "breed": "Golden Retriever",
+        "age": 3
+      },
+      {
+        "id": 2,
+        "name": "Charlie",
+        "species": "Dog",
+        "breed": "Chihuahua",
+        "age": 2
+      }
+    ],
+    "appointments": [
+      {
+        "id": 1,
+        "petId": 1,
+        "date": "2025-02-15",
+        "time": "10:00 AM",
+        "service": "Express Bath"
+      },
+      {
+        "id": 2,
+        "petId": 2,
+        "date": "2025-02-16",
+        "time": "2:00 PM",
+        "service": "Full Service"
+      }
+    ],
+    "grooming services": [
+        {
+            "id": 1,
+            "type": "Full Service",
+            "price": 80
+        },
+        {
+            "id": 2,
+            "type": "Express Bath",
+            "price": 50
+        },
+        {
+            "id": 3,
+            "type": "Nail Trim",
+            "price": 10
+        },
+        {
+            "id": 4,
+            "type": "Cat Grooming",
+            "price": 80
+        }
+    ]
+  }
+  
