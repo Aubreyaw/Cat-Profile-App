@@ -31,7 +31,7 @@
         "service": "Full Service"
       }
     ],
-    "grooming services": [
+    "services": [
         {
             "id": 1,
             "type": "Full Service",
