@@ -1,11 +1,12 @@
 import React from "react";
+import PetCard from "../components/PetCard";
 
 function PetClients({ pets }) {
   return (
     <div>
       <h1>Pet Clients</h1>
       {pets.map((pet) => (
-        <div key={pet.id}>{pet.name}</div>
+        <PetCard key={pet.id} pet={pet}/>
       ))}
     </div>
   );

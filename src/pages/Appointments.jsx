@@ -1,11 +1,12 @@
 import React from "react";
+import AppointmentCard from "../components/AppointmentCard";
 
 function Appointments({ appointments }) {
   return (
     <div>
         <h1>Appointments</h1>
         {appointments.map((appointment) => (
-            <div key={appointment.id}>{appointment.service}</div>
+            <AppointmentCard key={appointment.id} appointment={appointment}/>
         ))}
     </div>
   );
