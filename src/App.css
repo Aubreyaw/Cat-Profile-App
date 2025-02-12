@@ -1,0 +1,62 @@
+.nav-link {
+    padding: 2rem 1rem;
+      margin: 2rem 0;
+      background-color: rgba(181, 213, 250, 0.5);
+      font-family: Arial, Helvetica, sans-serif;
+}
+.card {
+    list-style-type: none;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    
+} 
+.pet-name {
+    text-align: left;
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+    text-align: left;
+    padding: 0.5rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    
+  }    
+  .pet-form {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+    background-color: rgba(181, 213, 250, 0.5);
+  }
+  
+  .pet-form form {
+    display: flex;
+    justify-content: left;
+  }
+  
+  .pet-form input {
+    margin-right: 2rem;
+    flex: 1;
+    width: 250px;
+    height: 25px;
+  }
+  
+  .pet-form button {
+    width: 150px;
+    height: 30px;
+  }
+  .pet-form h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .delete-btn {
+    background-color: rgba(181, 213, 250, 0.5);
+    margin: 20px;
+  }
+

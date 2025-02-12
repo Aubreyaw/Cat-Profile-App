@@ -1,14 +1,15 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom"; 
-import GroomingServices from "./pages/GroomingServices";
-import Appointments from "./pages/Appointments";
-import PetClients from "./pages/PetClients";
+import AboutPage from "./pages/AboutPage";
+import Pets from "./pages/Pets";
+import AddPetForm from "./pages/AddPetForm";
 
-function RoutesComponent({ services, appointments, pets }) {
+function RoutesComponent({ services, pets, handleAddPet }) {
     return (
         <Routes>
-            <Route path="/" element={<GroomingServices services={services}/>} />
-            <Route path="/appointments" element={<Appointments appointments={appointments}/>} />
-            <Route path="/pets" element={<PetClients pets={pets}/>} />
+            <Route path="/" element={<AboutPage services={services}/>} />
+            <Route path="/pets" element={<Pets pets={pets} />} />
+            <Route path="/add-pet" element={<AddPetForm handleAddPet={handleAddPet} />} /> 
         </Routes>
     );
 }
