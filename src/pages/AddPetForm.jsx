@@ -7,6 +7,7 @@ function AddPetForm({ handleAddPet }) {
     name: "",
     breed: "",
     age: "",
+    image: ""
   });
 
   const onFormChange = (event) => {
@@ -31,7 +32,7 @@ function AddPetForm({ handleAddPet }) {
       .then((response) => response.json())
       .then((newPet) => {
         handleAddPet(newPet);
-        setFormData({ species: "", name: "", breed: "", age: "" }); 
+        setFormData({ species: "", name: "", breed: "", age: "", image: "" }); 
       })
       .catch((error) => console.error("Error adding pet:", error));
   };
@@ -62,6 +63,12 @@ function AddPetForm({ handleAddPet }) {
         value={formData.age}
         onChange={onFormChange}
         placeholder="Age"
+      />
+      <input
+      name="image"
+      value={formData.image}
+      onChange={onFormChange}
+      placeholder="Image Url"
       />
       <button type="submit">Add Pet</button>
     </form>

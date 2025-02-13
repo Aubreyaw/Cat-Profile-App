@@ -3,11 +3,13 @@ import PetCard from "../components/PetCard";
 
 function Pets({ pets }) {
   return (
-    <div>
-      <h1 className="h1">Pets</h1>
-      {pets.map((pet) => (
-        <PetCard key={pet.id} pet={pet} />
-      ))}
+    <div className="pets-container">
+      <h1 className="pets-title">Pets</h1>
+      <div className="pet-grid">
+        {pets.map((pet) => (
+          <PetCard key={pet.id} pet={pet} />
+        ))}
+      </div>
     </div>
   );
 }

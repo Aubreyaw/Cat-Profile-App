@@ -1,32 +1,29 @@
 {
   "pets": [
     {
-      "id": "1",
-      "name": "Buddy",
-      "species": "Dog",
-      "breed": "Golden Retriever",
-      "age": "2"
+      "id": "3",
+      "name": "Chowder",
+      "species": "Cat",
+      "breed": "Domestic Short-hair",
+      "age": "1",
+      "image": "./images/chowder.jpg",
+      "likes": 3
     },
     {
       "id": "2",
       "name": "Charlie",
       "species": "Dog",
       "breed": "Chihuahua",
-      "age": "9"
-    },
-    {
-      "id": "3",
-      "name": "Chowder",
-      "species": "Cat",
-      "breed": "Domestic Short-hair",
-      "age": "1"
+      "age": "9",
+      "image": "./images/chowder.jpg"
     },
     {
       "id": "0e97",
       "species": "Cat",
       "name": "Watson",
       "breed": "Domestic Short-hair",
-      "age": "7"
+      "age": "7",
+      "image": "./images/chowder.jpg"
     }
   ]
 }
