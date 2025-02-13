@@ -3,10 +3,10 @@ import React, { useState } from "react";
 function AddPetForm({ handleAddPet }) {
 
   const [formData, setFormData] = useState({
-    species: "",
     name: "",
     breed: "",
     age: "",
+    hobbies: "",
     image: ""
   });
 
@@ -32,7 +32,7 @@ function AddPetForm({ handleAddPet }) {
       .then((response) => response.json())
       .then((newPet) => {
         handleAddPet(newPet);
-        setFormData({ species: "", name: "", breed: "", age: "", image: "" }); 
+        setFormData({ name: "", breed: "", age: "", hobbies: "", image: "" }); 
       })
       .catch((error) => console.error("Error adding pet:", error));
   };
@@ -40,12 +40,6 @@ function AddPetForm({ handleAddPet }) {
   return (
     <form className="pet-form" onSubmit={onFormSubmit}>
       <h1>Add Pet</h1>
-      <input
-        name="species"
-        value={formData.species}
-        onChange={onFormChange}
-        placeholder="Species"
-      />
       <input
         name="name"
         value={formData.name}
@@ -63,6 +57,12 @@ function AddPetForm({ handleAddPet }) {
         value={formData.age}
         onChange={onFormChange}
         placeholder="Age"
+      />
+      <input
+        name="hobbies"
+        value={formData.hobbies}
+        onChange={onFormChange}
+        placeholder="Hobbies"
       />
       <input
       name="image"

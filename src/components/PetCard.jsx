@@ -19,10 +19,10 @@ function PetCard({ pet }) {
     <div className="pet-card">
       <h2 className="pet-name">{pet.name}</h2>
       <img src={pet.image} alt={pet.name} className="pet-image" />
-      <ul className="card">
-        <li>Species: {pet.species}</li>
+      <ul className="card-list">
         <li>Breed: {pet.breed}</li>
         <li>Age: {pet.age}</li>
+        <li>Hobbies: {pet.hobbies}</li>
       </ul>
       <p> Show some love!</p>
       <button className="like-button" onClick={handleLike}>

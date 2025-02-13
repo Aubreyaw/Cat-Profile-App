@@ -5,30 +5,92 @@
       "name": "Chowder",
       "species": "Cat",
       "breed": "Domestic Short-hair",
-      "age": "1",
-      "image": "./images/chowder.jpg",
-      "hobbies": "Bird watching",
+      "age": "7 months",
+      "image": "./images/chowder-coding.jpg",
+      "hobbies": "Helping Mommy code...",
       "likes": 6
     },
     {
       "id": "2",
-      "name": "Charlie",
-      "species": "Dog",
-      "breed": "Chihuahua",
-      "age": "9",
-      "image": "./images/chowder.jpg",
-      "hobbies": "Bird watching",
-      "likes": 2
+      "name": "Izzy",
+      "species": "Cat",
+      "breed": "Domestic Long-hair",
+      "age": "5 months",
+      "image": "./images/rocky.jpg",
+      "hobbies": "Napping",
+      "likes": 7
     },
     {
-      "id": "0e97",
-      "species": "Cat",
+      "id": "71ca",
+      "name": "Buster",
+      "breed": "Domestic Short-hair",
+      "age": "4",
+      "hobbies": "Botany",
+      "image": "./images/buster.jpg",
+      "likes": 6
+    },
+    {
+      "id": "1b42",
       "name": "Watson",
       "breed": "Domestic Short-hair",
       "age": "7",
-      "image": "./images/chowder.jpg",
+      "hobbies": "Fashion",
+      "image": "./images/watson.jpg",
+      "likes": 6
+    },
+    {
+      "id": "7081",
+      "name": "Kemba",
+      "breed": "Domestic Short-hair",
+      "age": "9",
+      "hobbies": "Christmas",
+      "image": "./images/kemba.jpg",
+      "likes": 7
+    },
+    {
+      "id": "4f17",
+      "name": "Mirri",
+      "breed": "Domestic Long-hair",
+      "age": "7",
+      "hobbies": "Modeling",
+      "image": "./images/mirri.jpg",
+      "likes": 12
+    },
+    {
+      "id": "dc53",
+      "name": "Bruce",
+      "breed": "Domestic Long-hair",
+      "age": "4",
       "hobbies": "Bird watching",
-      "likes": 2
+      "image": "./images/bruce.jpg",
+      "likes": 7
+    },
+    {
+      "id": "3243",
+      "name": "Butch",
+      "breed": "Domestic Short-hair",
+      "age": "4",
+      "hobbies": "Defiance.",
+      "image": "./images/butch.jpg",
+      "likes": 8
+    },
+    {
+      "id": "f2b3",
+      "name": "Jaspurr",
+      "breed": "Domestic Long-hair",
+      "age": "3",
+      "hobbies": "Lounging on his bean bag",
+      "image": "./images/jaspurr.jpg",
+      "likes": 12
+    },
+    {
+      "id": "7c3f",
+      "name": "Lupi",
+      "breed": "Domestic Short-hair",
+      "age": "17",
+      "hobbies": "Baby-sitting (feat. Jaspurr)",
+      "image": "./images/lupi.jpg",
+      "likes": 13
     }
   ]
 }
