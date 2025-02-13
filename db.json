@@ -27,13 +27,6 @@
       "name": "Watson",
       "breed": "Domestic Short-hair",
       "age": "7"
-    },
-    {
-      "id": "7015",
-      "species": "Dog",
-      "name": "Aubrey",
-      "breed": "Scottish Deerhound",
-      "age": "7"
     }
   ]
 }

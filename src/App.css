@@ -27,7 +27,7 @@ h1 {
   }    
   .pet-form {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     margin: 2rem 0;
     background-color: rgba(181, 213, 250, 0.5);
   }
@@ -52,11 +52,5 @@ h1 {
     font-size: 2.5em;
     font-weight: 900;
     text-align: center;
-    padding: 0.5rem 0;
     font-family: Arial, Helvetica, sans-serif;
   }
-  .delete-btn {
-    background-color: rgba(181, 213, 250, 0.5);
-    margin: 20px;
-  }
-

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function AddPetForm({ handleAddPet }) {
+
   const [formData, setFormData] = useState({
     species: "",
     name: "",
@@ -10,12 +11,16 @@ function AddPetForm({ handleAddPet }) {
 
   const onFormChange = (event) => {
     const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
+
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value, 
+    }));
   };
 
   const onFormSubmit = (event) => {
     event.preventDefault();
-
+   
     fetch("http://localhost:3000/pets", {
       method: "POST",
       headers: {
@@ -26,19 +31,38 @@ function AddPetForm({ handleAddPet }) {
       .then((response) => response.json())
       .then((newPet) => {
         handleAddPet(newPet);
-        setFormData({ species: "", name: "", breed: "", age: "" });
+        setFormData({ species: "", name: "", breed: "", age: "" }); 
       })
       .catch((error) => console.error("Error adding pet:", error));
   };
 
   return (
-
     <form className="pet-form" onSubmit={onFormSubmit}>
       <h1>Add Pet</h1>
-      <input type="text" name="species" placeholder="Species" value={formData.species} onChange={onFormChange} />
-      <input type="text" name="name" placeholder="Pet Name" value={formData.name} onChange={onFormChange} />
-      <input type="text" name="breed" placeholder="Breed" value={formData.breed} onChange={onFormChange} />
-      <input type="text" name="age" placeholder="Age" value={formData.age} onChange={onFormChange} />
+      <input
+        name="species"
+        value={formData.species}
+        onChange={onFormChange}
+        placeholder="Species"
+      />
+      <input
+        name="name"
+        value={formData.name}
+        onChange={onFormChange}
+        placeholder="Pet Name"
+      />
+      <input
+        name="breed"
+        value={formData.breed}
+        onChange={onFormChange}
+        placeholder="Breed"
+      />
+      <input
+        name="age"
+        value={formData.age}
+        onChange={onFormChange}
+        placeholder="Age"
+      />
       <button type="submit">Add Pet</button>
     </form>
   );
