@@ -5,7 +5,7 @@ function Welcome() {
     <div className="welcome-container">
       <h1>Welcome to the Pet Collection App!</h1>
       <p>
-        Explore a variety of pets, add your own furry (or feathery) friends, and learn more about each one.
+        Explore a variety of pets, learn more about each one, add your own furry (or feathery) friends.
       </p>
 
       <div className="overview">
