@@ -14,6 +14,7 @@ function Welcome() {
           <li>Show some love to your favorites!</li>
           <li>Add new cats to the collection!</li>
         </ul>
+        <img src="/images/hello-cat.gif" className="hello-cat-gif" alt="Hello Cat GIF" />
       </div>
     </div>
   )

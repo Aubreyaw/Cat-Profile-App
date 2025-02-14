@@ -38,8 +38,9 @@ function AddPetForm({ handleAddPet }) {
   };
 
   return (
+    <>
     <form className="pet-form" onSubmit={onFormSubmit}>
-      <h1>Add Pet</h1>
+      <h1>Add a Cat!</h1>
       <input
         name="name"
         value={formData.name}
@@ -72,6 +73,9 @@ function AddPetForm({ handleAddPet }) {
       />
       <button type="submit">Add Pet</button>
     </form>
+    <img src="/images/keyboard-cat.gif" className="keyboard-cat-gif" alt="Keyboard Cat GIF" />
+    <img/>
+    </>
   );
 }
 
